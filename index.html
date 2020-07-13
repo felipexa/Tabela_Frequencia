@@ -1,0 +1,85 @@
+<!--Felipe Xavier, Aparicio Neto, Igor de Lara -->
+<!Doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>APS</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script src="arquivo.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+</head>
+
+<body>
+
+	<article>
+		<section class="container" id="divNumeros">
+			<div class="row  mt-5 mb-5">
+				<div class="col-xs-12 col-sm-12">
+					<h1 class="display-5 text-center">APS - ESTATÍSTICA</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-2"></div>
+				<div class="col-xs-12 col-sm-8">
+					<form id="form1">
+						<div class="row">
+							<div class="col-xs-12 col-sm-12">
+								<h4>Informe os números que deseja adicionar na tabela:</h4>
+							</div>
+							<div class="col-xs-12 col-sm-9">
+								<div class="form-group">
+									<input type="number" step="0" class="form-control form-control-lg" id="numero"
+										required>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<button type="button" onclick="inserir()"
+									class="btn btn-warning btn-lg btn-block ">Inserir</button>
+							</div>
+
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-sm-12">
+								<h4>Números inseridos: </h4>
+							</div>
+							<div class="col-xs-12 col-sm-12">
+								<div class="card">
+									<div class="card-body" id="mostrar">
+
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12">
+								<button type="button" onclick="entrar()"
+									class="btn btn-warning btn-lg btn-block mt-4">Mostrar tabela de frequência</button>
+							</div>
+					</form>
+				</div>
+				<div class="col-xs-12 col-sm-2"></div>
+			</div>
+		</section>
+		<section class="container" id="divTabela">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12">
+					<div class="table-responsive mt-5">
+						<table class="table table-hover" id="dataTable" width="100%" cellspacing="0">
+
+						</table>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-2">
+					<button type="button" onclick="voltar()"
+						class="btn btn-warning btn-lg btn-block mt-4">Retornar</button>
+				</div>
+			</div>
+		</section>
+	</article>
+</body>
+</html>
